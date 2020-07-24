@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Lab_3part2.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="zrodlo.vf"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="zrodlo_zrodlo_sch_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="zrodlo_zrodlo_sch_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="zrodlo_zrodlo_sch_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="zrodlo_zrodlo_sch_tb_stx_beh.prj"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1587150697" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1587150697">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587150853" xil_pn:in_ck="161238831283649644" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1587150853">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ficzercos.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1587150716" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-6492032957034400683" xil_pn:start_ts="1587150716">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587151035" xil_pn:in_ck="5827395833526470" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3923185803249093911" xil_pn:start_ts="1587151033">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="zrodlo.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1587150718" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="4029943638794233689" xil_pn:start_ts="1587150718">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587151035" xil_pn:in_ck="5238278486485162736" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1587151035">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ficzercos.v"/>
+      <outfile xil_pn:name="zrodlo.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1587151038" xil_pn:in_ck="5238278486485162736" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="973163500329620402" xil_pn:start_ts="1587151035">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+      <outfile xil_pn:name="zrodlo_zrodlo_sch_tb_beh.prj"/>
+      <outfile xil_pn:name="zrodlo_zrodlo_sch_tb_isim_beh.exe"/>
+    </transform>
+    <transform xil_pn:end_ts="1587152223" xil_pn:in_ck="5251485833620756436" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-2021145396776099659" xil_pn:start_ts="1587152223">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="zrodlo_zrodlo_sch_tb_isim_beh.wdb"/>
+    </transform>
+  </transforms>
+
+</generated_project>

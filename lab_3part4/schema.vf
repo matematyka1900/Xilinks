@@ -1,0 +1,51 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : schema.vf
+// /___/   /\     Timestamp : 04/18/2020 00:24:33
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Xilinx/lab_3part4/schema.vf -w C:/Xilinx/lab_3part4/schema.sch
+//Design Name: schema
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module schema(a, 
+              b, 
+              c, 
+              f);
+
+    input a;
+    input b;
+    input c;
+   output f;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_4;
+   wire XLXN_9;
+   
+   AND2  XLXI_1 (.I0(c), 
+                .I1(XLXN_9), 
+                .O(XLXN_1));
+   AND2  XLXI_2 (.I0(XLXN_4), 
+                .I1(b), 
+                .O(XLXN_2));
+   OR2  XLXI_3 (.I0(XLXN_2), 
+               .I1(XLXN_1), 
+               .O(f));
+   INV  XLXI_4 (.I(c), 
+               .O(XLXN_4));
+   INV  XLXI_8 (.I(a), 
+               .O(XLXN_9));
+endmodule

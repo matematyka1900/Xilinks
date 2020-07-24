@@ -1,0 +1,1 @@
+sch2hdl -intstyle ise -family spartan3e -verilog funkcja1.vf -w C:/Xilinx/Lab1/mpokora/funkcja1.sch 

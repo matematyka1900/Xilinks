@@ -1,0 +1,41 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : funkcja1.vf
+// /___/   /\     Timestamp : 04/09/2020 18:59:55
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Xilinx/Lab1/mpokora/funkcja1.vf -w C:/Xilinx/Lab1/mpokora/funkcja1.sch
+//Design Name: funkcja1
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module funkcja1(a, 
+                b, 
+                c, 
+                d);
+
+    input a;
+    input b;
+    input c;
+   output d;
+   
+   wire XLXN_19;
+   
+   AND2  XLXI_1 (.I0(b), 
+                .I1(a), 
+                .O(XLXN_19));
+   OR2  XLXI_4 (.I0(c), 
+               .I1(XLXN_19), 
+               .O(d));
+endmodule

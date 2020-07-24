@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Xilinx/Lab_4/divoc_divoc_sch_tb_isim_beh.exe" -prj "C:/Xilinx/Lab_4/divoc_divoc_sch_tb_beh.prj" "work.divoc_divoc_sch_tb" "work.glbl" 

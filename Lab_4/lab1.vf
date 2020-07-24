@@ -1,0 +1,54 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : lab1.vf
+// /___/   /\     Timestamp : 04/23/2020 23:32:32
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Xilinx/Lab_4/lab1.vf -w C:/Xilinx/Lab_4/lab1.sch
+//Design Name: lab1
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module lab1(a, 
+            b, 
+            cin, 
+            cout, 
+            s);
+
+    input a;
+    input b;
+    input cin;
+   output cout;
+   output s;
+   
+   wire XLXN_4;
+   wire XLXN_9;
+   wire XLXN_11;
+   
+   XOR2  XLXI_1 (.I0(XLXN_4), 
+                .I1(a), 
+                .O(s));
+   AND2  XLXI_2 (.I0(XLXN_4), 
+                .I1(a), 
+                .O(XLXN_11));
+   OR2  XLXI_3 (.I0(XLXN_9), 
+               .I1(XLXN_11), 
+               .O(cout));
+   XOR2  XLXI_4 (.I0(cin), 
+                .I1(b), 
+                .O(XLXN_4));
+   AND2  XLXI_5 (.I0(cin), 
+                .I1(b), 
+                .O(XLXN_9));
+endmodule

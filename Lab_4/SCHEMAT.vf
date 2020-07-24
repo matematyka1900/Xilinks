@@ -1,0 +1,40 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : SCHEMAT.vf
+// /___/   /\     Timestamp : 04/23/2020 22:37:08
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Xilinx/Lab_4/SCHEMAT.vf -w C:/Xilinx/Lab_4/SCHEMAT.sch
+//Design Name: SCHEMAT
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module SCHEMAT(a, 
+               b, 
+               c, 
+               s);
+
+    input a;
+    input b;
+   output c;
+   output s;
+   
+   
+   XOR2  XLXI_1 (.I0(b), 
+                .I1(a), 
+                .O(s));
+   AND2  XLXI_2 (.I0(b), 
+                .I1(a), 
+                .O(c));
+endmodule

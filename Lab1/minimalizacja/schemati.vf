@@ -1,0 +1,49 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : schemati.vf
+// /___/   /\     Timestamp : 04/16/2020 09:30:44
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3adsp -verilog C:/Xilinx/Lab1/minimalizacja/schemati.vf -w C:/Xilinx/Lab1/minimalizacja/schemati.sch
+//Design Name: schemati
+//Device: spartan3adsp
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module schemati(b, 
+                c, 
+                f);
+
+    input b;
+    input c;
+   output f;
+   
+   wire XLXN_1;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_7;
+   
+   INV  XLXI_4 (.I(b), 
+               .O(XLXN_1));
+   INV  XLXI_5 (.I(c), 
+               .O(XLXN_4));
+   OR2  XLXI_6 (.I0(c), 
+               .I1(XLXN_1), 
+               .O(XLXN_5));
+   OR2  XLXI_7 (.I0(XLXN_4), 
+               .I1(b), 
+               .O(XLXN_7));
+   AND2  XLXI_8 (.I0(XLXN_7), 
+                .I1(XLXN_5), 
+                .O(f));
+endmodule

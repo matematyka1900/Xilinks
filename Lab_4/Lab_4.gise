@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="LAB_4.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="SCHEMAT.vf"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="SCHEMAT_SCHEMAT_sch_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SCHEMAT_SCHEMAT_sch_tb_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="divoc.vf"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="divoc_divoc_sch_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="divoc_divoc_sch_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="divoc_divoc_sch_tb_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="lab1.vf"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="lab1_lab1_sch_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="lab1_lab1_sch_tb_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="optic.vf"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="optic_optic_sch_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="optic_optic_sch_tb_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1587674223" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1587674223">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587680825" xil_pn:in_ck="-7575253683330087846" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1587680825">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ficze.v"/>
+      <outfile xil_pn:name="jak.v"/>
+      <outfile xil_pn:name="tescik.v"/>
+      <outfile xil_pn:name="test.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1587680829" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="5857234137467937643" xil_pn:start_ts="1587680829">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587728017" xil_pn:in_ck="6545038702330593513" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-5908934889061055059" xil_pn:start_ts="1587728014">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="SCHEMAT.vf"/>
+      <outfile xil_pn:name="divoc.vf"/>
+      <outfile xil_pn:name="lab1.vf"/>
+      <outfile xil_pn:name="optic.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1587674229" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="8932226877318111556" xil_pn:start_ts="1587674229">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587728017" xil_pn:in_ck="4483546888554978139" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1587728017">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="SCHEMAT.vf"/>
+      <outfile xil_pn:name="divoc.vf"/>
+      <outfile xil_pn:name="ficze.v"/>
+      <outfile xil_pn:name="jak.v"/>
+      <outfile xil_pn:name="lab1.vf"/>
+      <outfile xil_pn:name="optic.vf"/>
+      <outfile xil_pn:name="tescik.v"/>
+      <outfile xil_pn:name="test.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1587728019" xil_pn:in_ck="4483546888554978139" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-560025561782307554" xil_pn:start_ts="1587728017">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1587680836" xil_pn:in_ck="-8466813691038521518" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-4396531072327233503" xil_pn:start_ts="1587680836">
+      <status xil_pn:value="AbortedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForced"/>
+      <outfile xil_pn:name="divoc_divoc_sch_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+    </transform>
+  </transforms>
+
+</generated_project>

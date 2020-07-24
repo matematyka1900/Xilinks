@@ -1,0 +1,48 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : divoc.vf
+// /___/   /\     Timestamp : 04/24/2020 13:33:35
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Xilinx/Lab_4/divoc.vf -w C:/Xilinx/Lab_4/divoc.sch
+//Design Name: divoc
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module divoc(a, 
+             b, 
+             amb, 
+             awb);
+
+    input a;
+    input b;
+   output amb;
+   output awb;
+   
+   wire XLXN_5;
+   wire awb_DUMMY;
+   
+   assign awb = awb_DUMMY;
+   AND2  XLXI_1 (.I0(XLXN_5), 
+                .I1(a), 
+                .O(awb_DUMMY));
+   AND2  XLXI_2 (.I0(b), 
+                .I1(XLXN_5), 
+                .O(amb));
+   INV  XLXI_3 (.I(XLXN_5), 
+               .O(awb_DUMMY));
+   XOR2  XLXI_4 (.I0(b), 
+                .I1(a), 
+                .O(XLXN_5));
+endmodule

@@ -1,0 +1,54 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : schemat.vf
+// /___/   /\     Timestamp : 04/17/2020 17:12:24
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3adsp -verilog C:/Xilinx/Lab1/Lab_3/schemat.vf -w C:/Xilinx/Lab1/Lab_3/schemat.sch
+//Design Name: schemat
+//Device: spartan3adsp
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module schemat(a, 
+               b, 
+               cin, 
+               cout, 
+               s);
+
+    input a;
+    input b;
+    input cin;
+   output cout;
+   output s;
+   
+   wire XLXN_23;
+   wire XLXN_24;
+   wire XLXN_25;
+   
+   AND2  XLXI_3 (.I0(XLXN_23), 
+                .I1(cin), 
+                .O(XLXN_24));
+   AND2  XLXI_4 (.I0(b), 
+                .I1(a), 
+                .O(XLXN_25));
+   XOR2  XLXI_6 (.I0(cin), 
+                .I1(XLXN_23), 
+                .O(s));
+   OR2  XLXI_7 (.I0(XLXN_25), 
+               .I1(XLXN_24), 
+               .O(cout));
+   XOR2  XLXI_9 (.I0(b), 
+                .I1(a), 
+                .O(XLXN_23));
+endmodule
